@@ -1,9 +1,10 @@
 <module>
 
-	<inherits name='com.extjs.gxt.ui.GXT'/>
-	
-	<source path="client"/>
-	
-	<entry-point class='gxt.client.GXTInterfaces'/>
-	
+	<inherits name='com.extjs.gxt.ui.GXT' />
+	<inherits name="com.google.gwt.user.User" />
+
+	<source path="client" />
+
+	<entry-point class='gxt.client.GXTInterfaces' />
+
 </module>
