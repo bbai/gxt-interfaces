@@ -7,7 +7,7 @@ import com.extjs.gxt.ui.client.widget.form.SimpleComboBox;
 /**
  * @author eugenp
  */
-public final class VSimpleComboBox< T > extends SimpleComboBox< T > implements ISimpleComboBox< T >{
+public class VSimpleComboBox< T > extends SimpleComboBox< T > implements ISimpleComboBox< T >{
 	
 	public VSimpleComboBox(){
 		super();
@@ -17,5 +17,5 @@ public final class VSimpleComboBox< T > extends SimpleComboBox< T > implements I
 	public SimpleComboBox< T > getComponent(){
 		return this;
 	}
-
+	
 }

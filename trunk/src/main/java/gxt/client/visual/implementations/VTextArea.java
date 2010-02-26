@@ -7,7 +7,7 @@ import com.extjs.gxt.ui.client.widget.form.TextArea;
 /**
  * @author eugenp
  */
-public final class VTextArea extends TextArea implements ITextArea{
+public class VTextArea extends TextArea implements ITextArea{
 	
 	public VTextArea(){
 		super();

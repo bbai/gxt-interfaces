@@ -7,7 +7,7 @@ import com.extjs.gxt.ui.client.widget.VerticalPanel;
 /**
  * @author eugenp
  */
-public final class VVerticalPanel extends VerticalPanel implements IVerticalPanel{
+public class VVerticalPanel extends VerticalPanel implements IVerticalPanel{
 	
 	public VVerticalPanel(){
 		super();

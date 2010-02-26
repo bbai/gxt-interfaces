@@ -5,7 +5,7 @@ import gxt.client.visual.interfaces.IFileUploadField;
 import com.extjs.gxt.ui.client.widget.form.FileUploadField;
 
 /**
- * @author victor
+ * @author eugenp
  */
 public class VFileUploadField extends FileUploadField implements IFileUploadField{
 	

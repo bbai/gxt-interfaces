@@ -7,7 +7,7 @@ import com.extjs.gxt.ui.client.widget.form.Field;
 /**
  * @author eugenp
  */
-public final class VField< D > extends Field< D > implements IField< D >{
+public class VField< D > extends Field< D > implements IField< D >{
 	
 	public VField(){
 		super();

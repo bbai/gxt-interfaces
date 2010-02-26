@@ -7,7 +7,7 @@ import com.extjs.gxt.ui.client.widget.form.LabelField;
 /**
  * @author eugenp
  */
-public final class VLabelField extends LabelField implements ILabelField{
+public class VLabelField extends LabelField implements ILabelField{
 	
 	public VLabelField(){
 		super();

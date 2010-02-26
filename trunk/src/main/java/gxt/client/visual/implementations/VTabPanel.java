@@ -7,7 +7,7 @@ import com.extjs.gxt.ui.client.widget.TabPanel;
 /**
  * @author eugenp
  */
-public final class VTabPanel extends TabPanel implements ITabPanel{
+public class VTabPanel extends TabPanel implements ITabPanel{
 	
 	public VTabPanel(){
 		super();

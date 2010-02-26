@@ -7,7 +7,7 @@ import com.extjs.gxt.ui.client.widget.toolbar.LabelToolItem;
 /**
  * @author eugenp
  */
-public final class VLabelToolItem extends LabelToolItem implements ILabelToolItem{
+public class VLabelToolItem extends LabelToolItem implements ILabelToolItem{
 	
 	public VLabelToolItem(){
 		super();
@@ -15,7 +15,7 @@ public final class VLabelToolItem extends LabelToolItem implements ILabelToolIte
 	public VLabelToolItem( final String label ){
 		super( label );
 	}
-
+	
 	//
 	public LabelToolItem getComponent(){
 		return this;

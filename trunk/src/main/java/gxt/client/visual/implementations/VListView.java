@@ -5,6 +5,9 @@ import gxt.client.visual.interfaces.IListView;
 import com.extjs.gxt.ui.client.data.ModelData;
 import com.extjs.gxt.ui.client.widget.ListView;
 
+/**
+ * @author eugenp
+ */
 public class VListView< M extends ModelData > extends ListView< M > implements IListView< M >{
 	
 	public VListView(){
@@ -14,5 +17,5 @@ public class VListView< M extends ModelData > extends ListView< M > implements I
 	public ListView< M > getComponent(){
 		return this;
 	}
-
+	
 }

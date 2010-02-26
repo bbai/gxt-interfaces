@@ -7,7 +7,7 @@ import com.extjs.gxt.ui.client.widget.form.TriggerField;
 /**
  * @author eugenp
  */
-public final class VTriggerField< D > extends TriggerField< D > implements ITriggerField< D >{
+public class VTriggerField< D > extends TriggerField< D > implements ITriggerField< D >{
 	
 	public VTriggerField(){
 		super();

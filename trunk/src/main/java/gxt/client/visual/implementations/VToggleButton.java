@@ -10,7 +10,7 @@ import com.google.gwt.user.client.ui.AbstractImagePrototype;
 /**
  * @author eugenp
  */
-public final class VToggleButton extends ToggleButton implements IToggleButton{
+public class VToggleButton extends ToggleButton implements IToggleButton{
 	
 	public VToggleButton(){
 		super();
