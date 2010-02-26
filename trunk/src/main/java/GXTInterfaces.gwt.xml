@@ -3,7 +3,7 @@
 	<inherits name='com.extjs.gxt.ui.GXT' />
 	<inherits name="com.google.gwt.user.User" />
 
-	<source path="client" />
+	<source path="gxt" />
 
 	<entry-point class='gxt.client.GXTInterfaces' />
 
