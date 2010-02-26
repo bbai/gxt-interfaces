@@ -7,7 +7,7 @@ import com.extjs.gxt.ui.client.widget.form.DateField;
 /**
  * @author eugenp
  */
-public final class VDateField extends DateField implements IDateField{
+public class VDateField extends DateField implements IDateField{
 	
 	public VDateField(){
 		super();

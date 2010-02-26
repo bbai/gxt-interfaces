@@ -8,7 +8,7 @@ import com.extjs.gxt.ui.client.widget.Container;
 /**
  * @author eugenp
  */
-public final class VContainer< T extends Component > extends Container< T > implements IContainer< T >{
+public class VContainer< T extends Component > extends Container< T > implements IContainer< T >{
 	
 	public VContainer(){
 		super();

@@ -7,7 +7,7 @@ import com.extjs.gxt.ui.client.widget.Dialog;
 /**
  * @author eugenp
  */
-public final class VDialog extends Dialog implements IDialog{
+public class VDialog extends Dialog implements IDialog{
 	
 	public VDialog(){
 		super();

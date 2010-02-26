@@ -7,7 +7,7 @@ import com.extjs.gxt.ui.client.widget.form.TextField;
 /**
  * @author eugenp
  */
-public final class VTextField< D > extends TextField< D > implements ITextField< D >{
+public class VTextField< D > extends TextField< D > implements ITextField< D >{
 	
 	public VTextField(){
 		super();
