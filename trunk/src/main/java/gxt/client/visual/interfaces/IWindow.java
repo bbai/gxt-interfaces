@@ -8,7 +8,12 @@ import com.extjs.gxt.ui.client.widget.button.Button;
  */
 public interface IWindow extends IContentPanel{
 	
+	// added
+	void hide( final IButton buttonPressed );
+	
+	// gxt
 	void hide( final Button buttonPressed );
+	
 	void setAutoHide( final boolean autoHide );
 	
 	void addWindowListener( final WindowListener listener );
@@ -16,5 +21,5 @@ public interface IWindow extends IContentPanel{
 	void removeWindowListener( final WindowListener listener );
 	
 	void setClosable( final boolean closable );
-
+	
 }

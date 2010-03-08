@@ -1,5 +1,6 @@
 package gxt.client.visual.implementations;
 
+import gxt.client.visual.interfaces.IButton;
 import gxt.client.visual.interfaces.IWindow;
 
 import com.extjs.gxt.ui.client.widget.Window;
@@ -13,9 +14,13 @@ public class VWindow extends Window implements IWindow{
 		super();
 	}
 	
-	//
+	// added
 	public Window getComponent(){
 		return this;
+	}
+	@Override
+	public void hide( final IButton buttonPressed ){
+		this.hide( buttonPressed.getComponent() );
 	}
 	
 }
