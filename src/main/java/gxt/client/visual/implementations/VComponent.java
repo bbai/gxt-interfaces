@@ -17,5 +17,5 @@ public class VComponent extends Component implements IComponent{
 	public Component getComponent(){
 		return this;
 	}
-	
+
 }
