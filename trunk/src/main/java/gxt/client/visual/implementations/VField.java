@@ -13,7 +13,7 @@ public class VField< D > extends Field< D > implements IField< D >{
 		super();
 	}
 	
-	//
+	/** mine */
 	public Field< D > getComponent(){
 		return this;
 	}
