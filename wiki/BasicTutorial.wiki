@@ -1,6 +1,6 @@
 #summary This tutorial tries to offer some simple implementation examples for using the project
 #labels Phase-Implementation
 
-= Introduction =
-
-- 
+= Design notes =
+- the interface exactly hierarchy follows the GXT hierarchy; also the naming is consistent with the GXT naming
+- each interface is separated into a view and a presenter
