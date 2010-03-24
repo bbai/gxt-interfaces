@@ -5,7 +5,7 @@
 	<groupId>gxt.visual</groupId>
 	<artifactId>gxt-interfaces</artifactId>
 	<name>gxt-interfaces</name>
-	<version>1.0.4</version>
+	<version>1.0.5</version>
 
 	<dependencies>
 
