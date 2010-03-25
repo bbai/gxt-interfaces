@@ -1,16 +1,16 @@
 package gxt.client.visual.interfaces;
 
-import com.extjs.gxt.ui.client.event.KeyListener;
+import gxt.client.visual.interfaces.presenter.ITriggerFieldPresenter;
+import gxt.client.visual.interfaces.view.ITriggerFieldView;
+
+import com.extjs.gxt.ui.client.widget.form.TriggerField;
 
 /**
  * @author eugenp
  */
-public interface ITriggerField< D > extends ITextField< D >{
+public interface ITriggerField< D > extends ITextField< D >, ITriggerFieldView< D >, ITriggerFieldPresenter< D >{
 	
-	void setEditable( final boolean editable );
-	
-	void setTriggerStyle( String triggerStyle );
-	
-	void addKeyListener( KeyListener keyListener );
-	
+	/** mine */
+	TriggerField< D > getComponent();
+
 }
