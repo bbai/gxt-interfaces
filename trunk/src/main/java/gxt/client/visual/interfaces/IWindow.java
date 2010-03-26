@@ -1,25 +1,16 @@
 package gxt.client.visual.interfaces;
 
-import com.extjs.gxt.ui.client.event.WindowListener;
-import com.extjs.gxt.ui.client.widget.button.Button;
+import gxt.client.visual.interfaces.presenter.IWindowPresenter;
+import gxt.client.visual.interfaces.view.IWindowView;
+
+import com.extjs.gxt.ui.client.widget.Window;
 
 /**
  * @author eugenp
  */
-public interface IWindow extends IContentPanel{
-	
-	// added
-	void hide( final IButton buttonPressed );
-	
-	// gxt
-	void hide( final Button buttonPressed );
-	
-	void setAutoHide( final boolean autoHide );
-	
-	void addWindowListener( final WindowListener listener );
-	
-	void removeWindowListener( final WindowListener listener );
-	
-	void setClosable( final boolean closable );
-	
+public interface IWindow extends IContentPanel, IWindowView, IWindowPresenter{
+
+	/** mine */
+	Window getComponent();
+
 }
