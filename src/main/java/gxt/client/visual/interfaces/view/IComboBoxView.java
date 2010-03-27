@@ -1,6 +1,5 @@
 package gxt.client.visual.interfaces.view;
 
-import com.extjs.gxt.ui.client.core.El;
 import com.extjs.gxt.ui.client.core.XTemplate;
 import com.extjs.gxt.ui.client.data.ModelData;
 import com.extjs.gxt.ui.client.store.ListStore;

@@ -5,7 +5,6 @@ import com.extjs.gxt.ui.client.event.KeyListener;
 import com.extjs.gxt.ui.client.widget.form.PropertyEditor;
 import com.extjs.gxt.ui.client.widget.form.Field.FieldImages;
 import com.extjs.gxt.ui.client.widget.form.Field.FieldMessages;
-import com.extjs.gxt.ui.client.widget.layout.FormLayout;
 
 /**
  * @author eugenp
@@ -231,7 +230,7 @@ public interface IFieldView< D > extends IBoxComponentView{
 	 */
 	void setHideLabel( boolean hideLabel );
 	
-	// void setImages( FieldImages images ); //TODO: probably version inconsistency
+	// void setImages( FieldImages images ); // new
 	
 	/**
 	 * True to mark this field being in an editor.
@@ -262,7 +261,7 @@ public interface IFieldView< D > extends IBoxComponentView{
 	 * Sets the field's messages.
 	 * @param messages the messages
 	 */
-	// void setMessages( FieldMessages messages ); //TODO: probably version inconsistency
+	// void setMessages( FieldMessages messages ); // new
 	
 	/**
 	 * The location where error text should display. Should be one of the following values (defaults to 'side'): <code><pre>
