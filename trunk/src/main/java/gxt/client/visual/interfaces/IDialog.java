@@ -1,14 +1,16 @@
 package gxt.client.visual.interfaces;
 
-import com.extjs.gxt.ui.client.widget.button.Button;
+import gxt.client.visual.interfaces.presenter.IDialogPresenter;
+import gxt.client.visual.interfaces.view.IDialogView;
+
+import com.extjs.gxt.ui.client.widget.Dialog;
 
 /**
  * @author eugenp
  */
-public interface IDialog extends IWindow{
+public interface IDialog extends IWindow, IDialogView, IDialogPresenter{
 	
-	Button getButtonById( final String string );
-	void setHideOnButtonClick( boolean hideOnButtonClick );
-	void setButtons( final String buttons );
+	/** mine */
+	Dialog getComponent();
 
 }

@@ -1,23 +1,17 @@
 package gxt.client.visual.interfaces;
 
-import java.util.List;
+import gxt.client.visual.interfaces.presenter.ICheckBoxListViewPresenter;
+import gxt.client.visual.interfaces.view.ICheckBoxListViewView;
 
 import com.extjs.gxt.ui.client.data.ModelData;
-import com.extjs.gxt.ui.client.store.ListStore;
+import com.extjs.gxt.ui.client.widget.CheckBoxListView;
 
 /**
- * 
+ * @author eugenp
  */
-public interface ICheckBoxListView< M extends ModelData > extends IListView< M >{
+public interface ICheckBoxListView< M extends ModelData > extends IListView< M >, ICheckBoxListViewView< M >, ICheckBoxListViewPresenter< M >{
 	
-	void setStore( final ListStore< M > store );
-	
-	void setDisplayProperty( final String string );
-	
-	ListStore< M > getStore();
-	
-	List< M > getChecked();
-	
-	void setChecked( final M m, final boolean checked );
-	
+	/** mine */
+	CheckBoxListView< M > getComponent();
+
 }
