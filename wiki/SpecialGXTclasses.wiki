@@ -1,0 +1,14 @@
+#summary The following classes from the GXT library are not testable from the point of view of this lightweight library.
+#labels Phase-Design,Phase-Implementation
+
+= Reasons and justifications =
+The reasons some classes from the GXT framework do not have corresponding interfaces and implementations in the gxt-interfaces library is their intrinsic design. These classes are not extendable, thus excluding them from being candidates for testing. 
+
+= Details =
+A quick list of just some of these classes (work in progress): 
+ColumnFooter
+Foot
+FooterRow
+Document
+HeaderItem
+FramePanel
