@@ -2,9 +2,13 @@ package gxt.client.visual.interfaces.added;
 
 import gxt.client.visual.interfaces.IFormPanel;
 
+/**
+ * @author eugenp
+ */
 public interface IEditableFormPanel extends IFormPanel{
-	public boolean isDefaultEditable();
 	
-	public void clearAllInvalid();
+	boolean isDefaultEditable();
+	
+	void clearAllInvalid();
 	
 }

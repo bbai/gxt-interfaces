@@ -8,6 +8,7 @@ import com.extjs.gxt.ui.client.widget.form.FormPanel.LabelAlign;
 import com.extjs.gxt.ui.client.widget.form.FormPanel.Method;
 
 /**
+ * Note: the IResetable and
  * @author eugenp
  */
 public interface IFormPanel extends IContentPanel{
@@ -20,7 +21,7 @@ public interface IFormPanel extends IContentPanel{
 	void clear();
 
 	void reset(); // TODO: implement IResetable instead
-	boolean isValid(); // TODO: implement I...
+	boolean isValid();
 	
 	void submit();
 	

@@ -2,12 +2,10 @@ package gxt.client.visual.interfaces.view;
 
 import gxt.client.visual.interfaces.IButton;
 
-import com.extjs.gxt.ui.client.core.El;
 import com.extjs.gxt.ui.client.event.ComponentEvent;
 import com.extjs.gxt.ui.client.event.WindowListener;
 import com.extjs.gxt.ui.client.fx.Draggable;
 import com.extjs.gxt.ui.client.fx.Resizable;
-import com.extjs.gxt.ui.client.widget.Viewport;
 import com.extjs.gxt.ui.client.widget.button.Button;
 import com.google.gwt.user.client.Element;
 import com.google.gwt.user.client.ui.Widget;
