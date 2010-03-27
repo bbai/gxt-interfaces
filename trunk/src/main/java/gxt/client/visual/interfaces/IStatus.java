@@ -1,6 +1,6 @@
 package gxt.client.visual.interfaces;
 
-import com.extjs.gxt.ui.client.widget.BoxComponent;
+import com.extjs.gxt.ui.client.widget.Status;
 
 import gxt.client.visual.interfaces.presenter.IStatusPresenter;
 import gxt.client.visual.interfaces.view.IStatusView;
@@ -11,6 +11,6 @@ import gxt.client.visual.interfaces.view.IStatusView;
 public interface IStatus extends IBoxComponent, IStatusView, IStatusPresenter{
 	
 	/** mine */
-	BoxComponent getComponent();
+	Status getComponent();
 
 }
