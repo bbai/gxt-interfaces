@@ -11,20 +11,20 @@ import com.google.gwt.user.client.ui.Widget;
  */
 public interface IWidget extends EventListener, HasHandlers{
 	
-	public void sinkEvents( int eventBitsToAdd );
+	void sinkEvents( int eventBitsToAdd );
 	
-	public void setLayoutData( Object layoutData );
+	void setLayoutData( Object layoutData );
 	
-	public void removeFromParent();
+	void removeFromParent();
 	
-	public void onBrowserEvent( Event event );
+	void onBrowserEvent( Event event );
 	
-	public boolean isAttached();
+	boolean isAttached();
 	
-	public Widget getParent();
+	Widget getParent();
 	
-	public Object getLayoutData();
+	Object getLayoutData();
 	
-	public void fireEvent( GwtEvent< ? > event );
+	void fireEvent( GwtEvent< ? > event );
 
 }
