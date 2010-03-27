@@ -14,10 +14,12 @@ public class VWindow extends Window implements IWindow{
 		super();
 	}
 	
-	// added
+	/** mine */
 	public Window getComponent(){
 		return this;
 	}
+	
+	//
 	@Override
 	public void hide( final IButton buttonPressed ){
 		this.hide( buttonPressed.getComponent() );
