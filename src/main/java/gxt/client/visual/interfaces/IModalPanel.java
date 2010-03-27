@@ -1,6 +1,6 @@
 package gxt.client.visual.interfaces;
 
-import com.extjs.gxt.ui.client.widget.BoxComponent;
+import com.extjs.gxt.ui.client.widget.ModalPanel;
 
 import gxt.client.visual.interfaces.presenter.IModalPanelPresenter;
 import gxt.client.visual.interfaces.view.IModalPanelView;
@@ -11,6 +11,6 @@ import gxt.client.visual.interfaces.view.IModalPanelView;
 public interface IModalPanel extends IBoxComponent, IModalPanelView, IModalPanelPresenter{
 	
 	/** mine */
-	BoxComponent getComponent();
+	ModalPanel getComponent();
 
 }
