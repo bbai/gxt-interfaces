@@ -1,11 +1,16 @@
 package gxt.client.visual.interfaces;
 
+import gxt.client.visual.interfaces.presenter.IToggleButtonPresenter;
+import gxt.client.visual.interfaces.view.IToggleButtonView;
+
+import com.extjs.gxt.ui.client.widget.button.ToggleButton;
+
 /**
  * @author eugenp
  */
-public interface IToggleButton extends IButton{
+public interface IToggleButton extends IButton, IToggleButtonView, IToggleButtonPresenter{
 	
-	boolean isPressed();
-	void setAllowDepress( final boolean allowDepress );
-	void toggle( final boolean state );
+	/** mine */
+	ToggleButton getComponent();
+
 }

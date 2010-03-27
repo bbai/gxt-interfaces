@@ -11,7 +11,7 @@ import com.extjs.gxt.ui.client.widget.button.Button;
  */
 public interface IButton extends IBoxComponent, IconSupport, IButtonView, IButtonPresenter{
 	
-	// mine
+	/** mine */
 	Button getComponent();
 
 }
