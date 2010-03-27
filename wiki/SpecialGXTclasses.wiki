@@ -5,10 +5,10 @@
 The reasons some classes from the GXT framework do not have corresponding interfaces and implementations in the gxt-interfaces library is their intrinsic design. These classes are not extendable, thus excluding them from being candidates for testing. 
 
 = Details =
-A quick list of just some of these classes (work in progress): 
-*ColumnFooter
-*Foot
-*FooterRow
-*Document
-*HeaderItem
-*FramePanel
+The following is a quick list of just some of these classes (work in progress):
+  * ColumnFooter
+  * Foot
+  * FooterRow
+  * Document
+  * HeaderItem
+  * FramePanel
