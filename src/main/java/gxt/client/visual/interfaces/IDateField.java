@@ -1,20 +1,18 @@
 package gxt.client.visual.interfaces;
 
+import gxt.client.visual.interfaces.presenter.IDateFieldPresenter;
+import gxt.client.visual.interfaces.view.IDateFieldView;
+
 import java.util.Date;
 
-import com.extjs.gxt.ui.client.widget.DatePicker;
-import com.extjs.gxt.ui.client.widget.form.DateTimePropertyEditor;
+import com.extjs.gxt.ui.client.widget.form.DateField;
 
 /**
  * @author eugenp
  */
-public interface IDateField extends ITriggerField< Date >{
+public interface IDateField extends ITriggerField< Date >, IDateFieldView, IDateFieldPresenter{
 	
-	DateTimePropertyEditor getPropertyEditor();
-	
-	void setMinValue( final Date minValue );
-	void setMaxValue( final Date maxValue );
-	
-	DatePicker getDatePicker();
-	
+	/** mine */
+	DateField getComponent();
+
 }

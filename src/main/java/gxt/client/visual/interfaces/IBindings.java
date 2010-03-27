@@ -1,14 +1,13 @@
 package gxt.client.visual.interfaces;
 
-import com.extjs.gxt.ui.client.data.ModelData;
+import gxt.client.visual.interfaces.presenter.IBindingsPresenter;
+import gxt.client.visual.interfaces.view.IBindingsView;
+
 import com.extjs.gxt.ui.client.event.Observable;
 
 /**
  * @author eugenp
  */
-public interface IBindings extends Observable{
-	
-	void unbind();
-	void bind( final ModelData model );
-
+public interface IBindings extends Observable, IBindingsView, IBindingsPresenter{
+	//
 }
