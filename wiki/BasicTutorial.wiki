@@ -10,7 +10,7 @@ This project essentially creates a very *thin layer* on top of GXT, in order to 
 == Setup ==
  * include the gxt-interfaces jar on the classpath of your project (via manual inclusion, maven or some other type of dependency management)
  * inherit the GXTInterfaces module from within your application module (no package required)
-<inherits name='GXTInterfaces'/>
+`<inherits name='GXTInterfaces'/>`
  * done
 
 
