@@ -1,6 +1,7 @@
-#summary This tutorial tries to offer some simple implementation examples for using the project
-#labels Phase-Implementation
+#summary This tutorial provides a simple overview for setting up and using the gxt-interfaces project.
+#labels Phase-Implementation,Featured
 
-= Design notes =
-- the interface exactly hierarchy follows the GXT hierarchy; also the naming is consistent with the GXT naming
-- each interface is separated into a view and a presenter
+= Motivation for creating the project =
+The main reason for creating and sharing this project is the untestability of the GXT visual components. In a nutshell, no GXT component can be easily mocked (via such frameworks as Mockito or EasyMock), making any attempt to test the code (in the JVM) virtually impossible. 
+This project essentially creates a very thin layer on top of GXT, in order to allow the client code to work with interfaces instead of the actual GXT classes. The benefits of working with interfaces (from the testing point of view) are huge: almost everything becomes testable. 
+
