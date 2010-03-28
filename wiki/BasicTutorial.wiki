@@ -4,5 +4,14 @@
 == Motivation for creating the project ==
 The main reason for creating and sharing this project is the *untestability* of the GXT visual components. In a nutshell, the GXT visual components cannot be mocked (via such frameworks as _Mockito_ or _EasyMock_), making any attempt to *test* the code (in the JVM) virtually impossible. 
 
+This project essentially creates a very *thin layer* on top of GXT, in order to allow the client code to work with *interfaces* instead of the actual GXT classes. The benefits of working with interfaces (from the testing point of view) are huge: almost everything becomes testable. 
 
-This project essentially creates a very thin layer on top of GXT, in order to allow the client code to work with interfaces instead of the actual GXT classes. The benefits of working with interfaces (from the testing point of view) are huge: almost everything becomes testable. 
+
+== Setup ==
+ * include the gxt-interfaces jar on the classpath of your project (via manual inclusion, maven or some other type of dependency management)
+ * inherit the GXTInterfaces module from within your application module (no package required)
+<inherits name='GXTInterfaces'/>
+ * done
+
+
+== Usage and examples ==
