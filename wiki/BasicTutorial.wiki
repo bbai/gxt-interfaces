@@ -15,3 +15,23 @@ This project essentially creates a very *thin layer* on top of GXT, in order to 
 
 
 == Usage and examples ==
+- instead of: 
+` Button button = new Button();`
+
+use: 
+` IButton button = new VButton();`
+
+- or more generic: 
+` IComponent button = new VButton();`
+
+
+
+== Mocking ==
+=== -with Mockito- ===
+
+- mocking a button: 
+`IButton buttonMock = Mockito.mock( IButton.class );`
+
+
+
+== Test sample ==
