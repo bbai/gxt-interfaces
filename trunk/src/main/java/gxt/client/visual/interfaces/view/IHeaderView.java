@@ -1,12 +1,11 @@
 package gxt.client.visual.interfaces.view;
 
 import com.extjs.gxt.ui.client.widget.Component;
-import com.extjs.gxt.ui.client.widget.IconSupport;
 
 /**
  * @author eugenp
  */
-public interface IHeaderView extends IComponentView, IconSupport{
+public interface IHeaderView extends IComponentView{
 	
 	/**
 	 * Adds a tool.
