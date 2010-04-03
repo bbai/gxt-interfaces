@@ -3,6 +3,9 @@ package gxt.client.visual.interfaces.view;
 import com.extjs.gxt.ui.client.core.XTemplate;
 import com.extjs.gxt.ui.client.event.ComponentEvent;
 
+/**
+ * @author eugenp
+ */
 public interface IColorPaletteView extends IComponentView{
 	
 	/**
