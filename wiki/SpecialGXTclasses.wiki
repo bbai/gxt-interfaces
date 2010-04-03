@@ -6,9 +6,15 @@ The reasons some classes from the GXT framework do not have corresponding interf
 
 = Details =
 The following is a quick list of just some of these classes (work in progress):
+(Component)
+  * DataListItem - deprecated
+  * DataViewItem - deprecated
+  * FramePanel - private constructor
+  * HeaderItem - inner class
+  * TreeItem - deprecated
+  * Thumb - inner class
+
   * ColumnFooter
   * Foot
   * FooterRow
-  * Document
-  * HeaderItem
-  * FramePanel
+  * Document - private constructor
