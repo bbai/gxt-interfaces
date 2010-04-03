@@ -1,6 +1,5 @@
 package gxt.client.visual.interfaces.view;
 
-import com.extjs.gxt.ui.client.widget.IconSupport;
 import com.extjs.gxt.ui.client.widget.TabPanel;
 import com.extjs.gxt.ui.client.widget.TabItem.HeaderItem;
 import com.google.gwt.http.client.RequestBuilder;
@@ -9,7 +8,7 @@ import com.google.gwt.user.client.ui.Frame;
 /**
  * @author eugenp
  */
-public interface ITabItemView extends ILayoutContainerView, IconSupport{
+public interface ITabItemView extends ILayoutContainerView{
 	
 	/**
 	 * Closes the tab item.
