@@ -6,6 +6,7 @@ The reasons some classes from the GXT framework do not have corresponding interf
 
 = Details =
 The following is a quick list of just some of these classes (work in progress):
+
 (Component)
   * DataListItem - deprecated
   * DataViewItem - deprecated
@@ -14,7 +15,11 @@ The following is a quick list of just some of these classes (work in progress):
   * TreeItem - deprecated
   * Thumb - inner class
 
-  * ColumnFooter
-  * Foot
-  * FooterRow
+
+  * ColumnFooter - has reference to inner class 'ColumnFooter.FooterRow'
+  * Foot - inner class
+  * FooterRow - inner class
   * Document - private constructor
+  * GridSplitBar - inner class
+  * Group - inner class
+  * Insert - package private constructor
