@@ -13,11 +13,13 @@ Another noticeable difference between is the option of frameworks: GWTTestCase u
 Speed is not the only reason you should prefer tests running in the JVM. Another reason is that writing tests for the JVM will force you to keep the design clean, by separating the the visual elements and the business logic. One possible way of achieving this is the MVP pattern. 
 
 
+
 == Setup (draft) ==
  * include the gxt-interfaces jar on the classpath of your project (via manual inclusion, maven or some other type of dependency management)
  * inherit the GXTInterfaces module from within your application module (no package required)
 `<inherits name='GXTInterfaces'/>`
  * done
+
 
 
 == Usage and examples ==
@@ -36,7 +38,6 @@ use:
 === -with Mockito- ===
 
 - mocking a button: 
-
 `IButton buttonMock = Mockito.mock( IButton.class );`
 
 
