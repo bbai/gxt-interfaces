@@ -7,7 +7,9 @@ In order to address this problem, the gxt-interfaces project essentially creates
 
 == Testing in the JVM vs GWTTestCase ==
 There are several disadvantages of using the provided GWTTestCase class when doing unit testing. First, testing is painfully slow, so much so that running a moderate sized suite of tests will take many minutes; this makes running the suite difficult during the development cycle. The alternative is running the tests in the JVM, orders of magnitude faster. 
+
 Another noticeable difference between is the option of frameworks: GWTTestCase uses _JUnit 3_ and only _JUnit 3_, whereas in the JVM you can test with the framework of your choosing. A recommendation would be _JUnit 4_ and _Mockito_. 
+
 Speed is not the only reason you should prefer tests running in the JVM. Another reason is that writing tests for the JVM will force you to keep the design clean, by separating the the visual elements and the business logic. One possible way of achieving this is the MVP pattern. 
 
 
