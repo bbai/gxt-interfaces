@@ -2,36 +2,52 @@
 #labels Phase-Implementation,Featured
 
 == Goals ==
-One of the main problems of the GXT framework is it's *untestability* - in a nutshell, the GXT visual components cannot be mocked (via such frameworks as _Mockito_ or _EasyMock_), making any attempt to *test* the code (in the JVM) virtually impossible. 
-In order to address this problem, the gxt-interfaces project essentially creates a *thin layer* on top of GXT, in order to allow the client code to work with *interfaces* instead of the actual GXT classes. The immediate benefit is that everything becomes testable. 
+One of the main problems of the GXT framework is it's *untestability* - in a nutshell, the GXT visual components cannot be mocked (via such frameworks as _Mockito_ or _EasyMock_), making any attempt to *test* the code (in the JVM) impossible. 
 
-== Testing in the JVM vs GWTTestCase ==
-There are several disadvantages of using the provided GWTTestCase class when doing unit testing. First, testing is painfully slow, so much so that running a moderate sized suite of tests will take many minutes; this makes running the suite difficult during the development cycle. The alternative is running the tests in the JVM, orders of magnitude faster. 
+In order to address this problem, the _gxt-interfaces_ project essentially creates a *thin layer* on top of GXT, so that the client can work with *interfaces* instead of the actual GXT classes. The immediate benefit is that everything becomes testable. 
 
-Another noticeable difference between is the option of frameworks: GWTTestCase uses _JUnit 3_ and only _JUnit 3_, whereas in the JVM you can test with the framework of your choosing. A recommendation would be _JUnit 4_ and _Mockito_. 
 
+== Tests in the JVM vs GWTTestCase ==
+=== Speed ===
+GWT provides the _GWTTestCase_ class to achieve unit testing of the client code. The tests run similar to hosted mode, with the code already compiled down into javascript, and using the actual DOM components of the browser. 
+
+The problem is that your tests will be very slow. There are many reasons for this: in order to run the test, the entire module has to be compiled, which may take a 10-20 seconds for any module of reasonable size. Second, the test interacts with the DOM, which is a very slow operation in itself. 
+
+This makes the simple goal of running a test suite several times a day a real problem, seeing how a suite may contain hundred tests, making it's total running time in the vicinity of ten minutes even for a moderately sized suite. You can forget about TDD. 
+
+The alternative is running the tests in the JVM, orders of magnitude faster, without touching the DOM. 
+
+=== Framework availability ===
+Another noticeable difference between is the option of frameworks: _GWTTestCase_ uses _JUnit 3_ and only _JUnit 3_. If the tests run in the JVM however, any framework or combination of frameworks may be used. A recommendation would be _JUnit 4_ and _Mockito_. 
+
+=== Clean design ===
 Speed is not the only reason you should prefer tests running in the JVM. Another reason is that writing tests for the JVM will force you to keep the design clean, by separating the the visual elements and the business logic. One possible way of achieving this is the MVP pattern. 
 
 
-
 == Setup (draft) ==
- * include the gxt-interfaces jar on the classpath of your project (via manual inclusion, maven or some other type of dependency management)
+ * include the _gxt-interfaces_ jar on the classpath of your project (via manual inclusion, maven or some other type of dependency management)
  * inherit the GXTInterfaces module from within your application module (no package required)
-`<inherits name='GXTInterfaces'/>`
+{{{
+<inherits name='GXTInterfaces'/>
+}}}
  * done
 
 
 
 == Usage and examples ==
 - instead of: 
-` Button button = new Button();`
-
+{{{
+Button button = new Button();
+}}}
 use: 
-` IButton button = new VButton();`
+{{{
+IButton button = new VButton();
+}}}
 
 - or more generic: 
-` IComponent button = new VButton();`
-
+{{{
+IComponent button = new VButton();
+}}}
 
 
 == Mocking ==
