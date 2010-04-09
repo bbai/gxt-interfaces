@@ -8,7 +8,7 @@ In order to address this problem, the _gxt-interfaces_ project essentially creat
 
 
 == Tests in the JVM vs GWTTestCase ==
-=== Speed ===
+==== Speed ====
 GWT provides the _GWTTestCase_ class to achieve unit testing of the client code. The tests run similar to hosted mode, with the code already compiled down into javascript, and using the actual DOM components of the browser. 
 
 The problem is that your tests will be very slow. There are many reasons for this: in order to run the test, the entire module has to be compiled, which may take a 10-20 seconds for any module of reasonable size. Second, the test interacts with the DOM, which is a very slow operation in itself. 
@@ -17,10 +17,10 @@ This makes the simple goal of running a test suite several times a day a real pr
 
 The alternative is running the tests in the JVM, orders of magnitude faster, without touching the DOM. 
 
-=== Framework availability ===
+==== Framework availability ====
 Another noticeable difference between is the option of frameworks: _GWTTestCase_ uses _JUnit 3_ and only _JUnit 3_. If the tests run in the JVM however, any framework or combination of frameworks may be used. A recommendation would be _JUnit 4_ and _Mockito_. 
 
-=== Clean design ===
+==== Clean design ====
 Speed is not the only reason you should prefer tests running in the JVM. Another reason is that writing tests for the JVM will force you to keep the design clean, by separating the the visual elements and the business logic. One possible way of achieving this is the MVP pattern. 
 
 
@@ -51,19 +51,24 @@ IComponent button = new VButton();
 
 
 == Mocking ==
-=== -with Mockito- ===
-
+==== with Mockito ====
 - mocking a button: 
-`IButton buttonMock = Mockito.mock( IButton.class );`
+{{{
+IButton buttonMock = Mockito.mock( IButton.class );
+}}}
 
 
+== Test sample ==
+This is a simple example test, with the following functionality:
+* a button is mocked (using it's interface)
+* an interaction is done on the button
+* the interaction is simply verified with Mockito
 
-== Test sample (draft) ==
 {{{
 @Test
 public void serverCommunicationStarted_theActionButtonIsDisabled(){
    // Arrange
-   final IButton buttonMock = Mockito.movck( IButton.class ); 
+   final IButton buttonMock = Mockito.mock( IButton.class ); 
 
    // Act
    buttonMock.disable(); 
