@@ -78,7 +78,7 @@
 
 	<properties>
 		<gxt.version>2.1.0-r3</gxt.version>
-		<gwt.version>1.9.941</gwt.version>
+		<gwt.version>2.0.3</gwt.version>
 	</properties>
 
 </project>
