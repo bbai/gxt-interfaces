@@ -18,7 +18,7 @@ public class VFormBinding extends FormBinding implements IFormBinding{
 	}
 
 	//
-	public FormBinding getComponent(){
+	public final FormBinding getComponent(){
 		return this;
 	}
 	
