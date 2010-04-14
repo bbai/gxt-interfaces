@@ -1,27 +1,31 @@
-#summary This tutorial provides a simple overview for setting up and using the gxt-interfaces project.
+#summary This document provides a simple overview for setting up and using the gxt-interfaces project.
 #labels Phase-Implementation,Featured
 
 == Goals ==
 One of the main problems of the GXT framework is it's *untestability* - in a nutshell, the GXT visual components cannot be mocked (via such frameworks as _Mockito_ or _EasyMock_), making any attempt to *test* the code (in the JVM) impossible. 
 
-In order to address this problem, the _gxt-interfaces_ project essentially creates a *thin layer* on top of GXT, so that the client can work with *interfaces* instead of the actual GXT classes. The immediate benefit is that everything becomes testable. 
+In order to address this problem, the _gxt-interfaces_ project essentially creates a *thin layer* on top of GXT, so that the client can work with *interfaces* instead of the actual GXT classes, with the immediate benefit that everything becomes testable. 
 
 
 == Tests in the JVM vs GWTTestCase ==
 ==== Speed ====
 GWT provides the _GWTTestCase_ class to achieve unit testing of the client code. The tests run similar to hosted mode, with the code already compiled down into javascript, and using the actual DOM components of the browser. 
 
-The problem is that your tests will be very slow. There are many reasons for this: in order to run the test, the entire module has to be compiled, which may take a 10-20 seconds for any module of reasonable size. Second, the test interacts with the DOM, which is a very slow operation in itself. 
+The problem is that your tests will be very slow, for many reasons: in order to run the test, the entire module has to be compiled, which may take a 20-30 seconds for any module of reasonable size. And you're probably not compiling a single module. Second, the test interacts with the DOM, which is a very slow operation in itself. 
 
-This makes the simple goal of running a test suite several times a day a real problem, seeing how a suite may contain hundred tests, making it's total running time in the vicinity of ten minutes even for a moderately sized suite. You can forget about TDD. 
+This makes the simple goal of running your entire test suite several times a day a real problem, seeing how that could mean hundreds of tests spread over many different GWT modules. You can forget about the immediate feedback that you get from running suite, and you can clearly forget about TDD. 
 
-The alternative is running the tests in the JVM, orders of magnitude faster, without touching the DOM. 
+The alternative is running the tests in the JVM, orders of magnitude faster, and without touching the DOM once. 
+
+
+==== Clean separation of concerns ====
+Doing _GWTTestCase_ type testing allows the user to write the tests without even trying to get a clean separation between the business logic and the visual components. And even the most experienced and disciplined developer will still mix in logic and visual elements if the underlying framework doesn't help him to enforce this separation. One of the major advantages of running the tests in the JVM is that you simply cannot do this - as soon as you try to test something that touched the DOM, your test fails. This makes a clean separation of concerns necessary, and when that separation is not there, the test clearly indicates this fact, driving the design of the application. 
+One way to get this sort of separation is using the MVP pattern (Model View Presenter). 
+
 
 ==== Framework availability ====
 Another noticeable difference between is the option of frameworks: _GWTTestCase_ uses _JUnit 3_ and only _JUnit 3_. If the tests run in the JVM however, any framework or combination of frameworks may be used. A recommendation would be _JUnit 4_ and _Mockito_. 
 
-==== Clean design ====
-Speed is not the only reason you should prefer tests running in the JVM. Another reason is that writing tests for the JVM will force you to keep the design clean, by separating the the visual elements and the business logic. One possible way of achieving this is the MVP pattern. 
 
 
 == Setup (draft) ==
