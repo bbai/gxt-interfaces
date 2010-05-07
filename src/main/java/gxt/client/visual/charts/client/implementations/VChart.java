@@ -1,6 +1,7 @@
-package gxt.client.visual.implementations;
+package gxt.client.visual.charts.client.implementations;
 
-import gxt.client.visual.interfaces.IChart;
+import gxt.client.visual.charts.client.interfaces.IChart;
+
 import com.extjs.gxt.charts.client.Chart;
 
 /**
