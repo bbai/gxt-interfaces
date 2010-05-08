@@ -2,6 +2,9 @@
 
 	<inherits name='com.extjs.gxt.ui.GXT' />
 	<inherits name="com.google.gwt.user.User" />
+	
+	<inherits name='gxt.client.visual.charts.GXTInterfaces_Client' />
+	<inherits name='gxt.client.visual.desktop.GXTInterfaces_Desktop' />
 
 	<source path="gxt" />
 

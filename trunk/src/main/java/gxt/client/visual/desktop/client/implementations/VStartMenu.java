@@ -1,6 +1,6 @@
-package gxt.client.visual.implementations;
+package gxt.client.visual.desktop.client.implementations;
 
-import gxt.client.visual.interfaces.IStartMenu;
+import gxt.client.visual.desktop.client.interfaces.IStartMenu;
 
 import com.extjs.gxt.desktop.client.StartMenu;
 
