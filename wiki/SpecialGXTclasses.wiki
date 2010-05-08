@@ -15,7 +15,6 @@ The following is a quick list of just some of these classes (work in progress):
   * TreeItem - deprecated
   * Thumb - inner class
 
-
   * ColumnFooter - has reference to inner class 'ColumnFooter.FooterRow'
   * Foot - inner class
   * FooterRow - inner class
@@ -23,3 +22,5 @@ The following is a quick list of just some of these classes (work in progress):
   * GridSplitBar - inner class
   * Group - inner class
   * Insert - package private constructor
+  * TaskButton - not public
+  * TaskBar - GXT problem - it returns a TaskButton which is not a public class
