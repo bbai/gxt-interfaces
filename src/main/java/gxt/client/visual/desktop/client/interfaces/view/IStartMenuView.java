@@ -1,4 +1,6 @@
-package gxt.client.visual.interfaces.view;
+package gxt.client.visual.desktop.client.interfaces.view;
+
+import gxt.client.visual.interfaces.view.IMenuView;
 
 import com.extjs.gxt.ui.client.core.El;
 import com.extjs.gxt.ui.client.widget.Component;
