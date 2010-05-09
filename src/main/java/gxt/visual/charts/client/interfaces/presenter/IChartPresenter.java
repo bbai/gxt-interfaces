@@ -1,6 +1,6 @@
 package gxt.visual.charts.client.interfaces.presenter;
 
-import gxt.visual.interfaces.presenter.IFlashComponentPresenter;
+import gxt.visual.ui.client.interfaces.presenter.IFlashComponentPresenter;
 
 /**
  * @author eugenp

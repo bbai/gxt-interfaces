@@ -1,6 +1,6 @@
 package gxt.visual.charts.client.interfaces.view;
 
-import gxt.visual.interfaces.view.IFlashComponentView;
+import gxt.visual.ui.client.interfaces.view.IFlashComponentView;
 
 import com.extjs.gxt.charts.client.event.ChartListener;
 import com.extjs.gxt.charts.client.model.ChartModel;
