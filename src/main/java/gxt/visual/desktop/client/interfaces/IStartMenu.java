@@ -4,7 +4,7 @@ import com.extjs.gxt.desktop.client.StartMenu;
 
 import gxt.visual.desktop.client.interfaces.presenter.IStartMenuPresenter;
 import gxt.visual.desktop.client.interfaces.view.IStartMenuView;
-import gxt.visual.interfaces.IMenu;
+import gxt.visual.ui.client.interfaces.IMenu;
 
 /**
  * @author eugenp
