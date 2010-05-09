@@ -1,7 +1,0 @@
-<module>
-
-	<inherits name='com.extjs.gxt.charts.Chart' />
-
-	<source path="client" />
-
-</module>
