@@ -1,6 +1,6 @@
 package gxt.visual.desktop.client.interfaces.presenter;
 
-import gxt.visual.interfaces.presenter.IMenuPresenter;
+import gxt.visual.ui.client.interfaces.presenter.IMenuPresenter;
 
 /**
  * @author eugenp
