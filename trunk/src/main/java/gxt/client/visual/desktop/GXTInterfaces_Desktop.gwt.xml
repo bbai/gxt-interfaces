@@ -1,7 +1,0 @@
-<module>
-
-	<inherits name='com.extjs.gxt.desktop.WebDesktop' />
-
-	<source path="client" />
-
-</module>
