@@ -3,11 +3,8 @@
 	<inherits name='com.extjs.gxt.ui.GXT' />
 	<inherits name="com.google.gwt.user.User" />
 	
-	<inherits name='gxt.client.visual.charts.GXTInterfaces_Client' />
-	<inherits name='gxt.client.visual.desktop.GXTInterfaces_Desktop' />
-
-	<source path="gxt" />
-
-	<entry-point class='gxt.visual.GXTInterfaces' />
+	<inherits name='gxt.visual.charts.GXTInterfaces_Chart' />
+	<inherits name='gxt.visual.desktop.GXTInterfaces_Desktop' />
+	<inherits name='gxt.visual.ui.GXTInterfaces_UI' />
 
 </module>
