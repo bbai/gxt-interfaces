@@ -8,6 +8,6 @@
 
 	<source path="gxt" />
 
-	<entry-point class='gxt.client.GXTInterfaces' />
+	<entry-point class='gxt.visual.GXTInterfaces' />
 
 </module>
