@@ -32,7 +32,7 @@ Another noticeable difference between is the option of frameworks: _GWTTestCase_
  * include the _gxt-interfaces_ jar on the classpath of your project (via manual inclusion, maven or some other type of dependency management)
  * inherit the GXTInterfaces module from within your application module (no package required)
 {{{
-<inherits name='GXTInterfaces'/>
+<inherits name='gxt.GXTInterfaces'/>
 }}}
  * done
 
