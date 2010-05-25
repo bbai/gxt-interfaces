@@ -11,11 +11,12 @@ import com.extjs.gxt.ui.client.widget.CheckBoxListView;
 public class VCheckBoxListView< M extends ModelData > extends CheckBoxListView< M > implements ICheckBoxListView< M >{
 	
 	public VCheckBoxListView(){
-		//	
+		super();
 	}
 	
 	@Override
 	public CheckBoxListView< M > getComponent(){
 		return this;
 	}
+
 }
