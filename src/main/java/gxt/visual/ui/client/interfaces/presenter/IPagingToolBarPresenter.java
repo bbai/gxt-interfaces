@@ -1,6 +1,6 @@
 package gxt.visual.ui.client.interfaces.presenter;
 
-import gxt.visual.IBindedPagingToolbar;
+import gxt.visual.extensions.client.IBindedPagingToolbar;
 
 /**
  * @author eugenp

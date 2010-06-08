@@ -1,4 +1,4 @@
-package gxt.visual;
+package gxt.visual.extensions.client;
 
 import com.extjs.gxt.ui.client.event.BaseEvent;
 import com.extjs.gxt.ui.client.event.EventType;
