@@ -1,7 +1,5 @@
 <module>
 
-	<inherits name='com.extjs.gxt.ui.GXT' />
-
 	<source path="client" />
 
 </module>

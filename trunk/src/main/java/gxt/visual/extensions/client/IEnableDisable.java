@@ -1,4 +1,4 @@
-package gxt.visual;
+package gxt.visual.extensions.client;
 
 /**
  * @author eugenp
