@@ -1,7 +1,8 @@
 <module>
 
 	<inherits name='com.extjs.gxt.ui.GXT' />
-
+	<inherits name='gxt.visual.extensions.GXTInterfaces_Extensions' />
+	
 	<source path="client" />
 
 </module>
